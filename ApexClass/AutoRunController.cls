@@ -8,7 +8,8 @@ public with sharing class {{ api_name }} {
 
     // Code will invoke on page load
     public PageReference autoRun(){
-        
+       //Add code here
+        return null;
     }
 
 }
