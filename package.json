@@ -179,6 +179,7 @@
 				}
 			]
 		},
+		{
 		
 			"name"			: "Trigger Handler TR",
 			"file_name"		: "TriggerHandler_TR.cls",
