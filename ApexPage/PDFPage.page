@@ -1,0 +1,150 @@
+<apex:page  showHeader="False" standardStylesheets="False" RenderAs="PDF" applyHtmlTag="false">
+<head>
+<style type="text/css">
+@page{
+    size: letter;
+    margin-top:0%;
+    margin-bottom:10%;
+    margin-right:0%;
+    margin-left:0%;
+
+    
+   
+    @top-center {
+        background:#00539B;
+        width:100%;
+        content: element(header);
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+  
+    @bottom-left {
+        background:#09357A;
+        content: element(footer);   
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 8px;
+    }
+    @bottom-center{
+        background:#09357A;
+        text-align: center;
+        content: element(footerimage); 
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: white;
+        
+    }
+    @bottom-right {
+        background:#09357A;
+        text-align: center;
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: white;
+        
+    }
+  
+}
+div.header {
+    position : running(header) ;
+    text-align: center;
+    padding: 0px;
+    padding-right: 0px;
+}
+div.footer{
+    position : running(footer) ;
+    color: white;
+    padding-left: 50px;
+    z-index:2;
+}
+div.footerimage{
+    position : running(footer) ;
+    text-align: center;
+    padding: 0px;
+    padding-right: 0px;
+    z-index: 3;
+}
+div.covertitle{
+    font: 40px;
+    max-width:740px;
+    position:relative;
+    text-align:center;
+    left: 35px;
+    top: 250px;
+}    
+body {
+    font-family: Proxima Nova, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+}
+
+table {
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse:collapse;  
+    empty-cells: hide;
+}
+
+td {
+    border: 1px solid #000000;
+    border-spacing: 0px;
+    border-collapse:collapse;
+    empty-cells: hide;
+    vertical-align: top;
+   
+}
+tr 
+    empty-cells: hide;
+    border-collapse:collapse;
+}
+.tablelabel {
+    background: #000000;
+    color: #FFFFFF;
+    padding: 5px;
+    font-weight: bolder;
+}
+.tableheader {
+    font-weight: bolder;
+}
+.invisiblecell {
+    border-left: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+.currency {
+    text-align:right;
+}
+p{
+    font-size:12px;
+    margin-left:40px;
+    color:black;
+}
+p.alt{
+    font-size:12px;
+    margin-left:70px;
+    color:black;
+}
+h1{ 
+    font-size:20px;
+    font-style:normal;
+    font-weight:normal;
+    
+}
+h2{ 
+    font-size:12px;
+    font-style:normal;
+    font-weight:normal;
+    color:black;
+    margin-left:25px;
+    text-indent:-20px;
+}
+</style>
+<div class="header">
+    <!--<apex:image value="{!$Resource.PageHeaderImage}"  height="87px"/>-->
+</div>
+<div class="footer">
+    <font style="font-size:20px">Footer Text</font><br/><br/>  
+   Confidential Information
+</div>
+</head>
+<body>
+</body>
+</apex:page>
