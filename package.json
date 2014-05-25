@@ -340,6 +340,24 @@
 		   ]
 		},
 		{
+			"name" 			: "Apex Trigger All",
+			"file_name"		: "ApexTriggerAll.trigger",
+			"description" 	: "Basic Apex Trigger - Create Handler First",
+			"author" 		: "trevorrussell",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Apex Trigger API Name",
+		            "default" 		: "ObjectTrigger"
+		        },
+		        {   
+		            "name"          : "object_name",
+		            "description"   : "Object API Name",
+		            "default" 		: "Account"
+		        }
+		   ]
+		},
+		{
 			"name" 			: "Apex Trigger - All Events",
 			"file_name"		: "ApexTriggerAllEvents.trigger",
 			"description" 	: "Apex Trigger with all Trigger events",
