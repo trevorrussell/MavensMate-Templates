@@ -189,7 +189,7 @@
 		        {   
 		            "name"          : "api_name",
 		            "description"   : "Apex Class API Name",
-		            "default" 		: "MyApexClass"
+		            "default" 		: "ObjectTriggerHandler"
 		        },
 		        {
 					"name"			: "object_name",
