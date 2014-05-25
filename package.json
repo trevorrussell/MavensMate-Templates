@@ -286,7 +286,7 @@
 		            "default" 		: "MyVisualforcePageName"
 		        }
 		   ]
-		}
+		},
 		{
 			"name" 			: "PDF Page",
 			"file_name"		: "PDFPage.page",
