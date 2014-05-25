@@ -178,7 +178,25 @@
 					"default"		: "InvoiceService"
 				}
 			]
-		},		
+		},
+		
+			"name"			: "Trigger Handler TR",
+			"file_name"		: "TriggerHandler_TR.cls",
+			"description" 	: "Trigger Handler from LEAP project ",
+			"author" 		: "trevorrussell",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Apex Class API Name",
+		            "default" 		: "MyApexClass"
+		        },
+		        {
+					"name"			: "object_name",
+					"description"	: "API name of the Standard or Custom Object",
+					"default"		: "Account"
+			}
+		   ]
+		},
 		{
 			"name"			: "Trigger Handler",
 			"file_name"		: "TriggerHandler.cls",
