@@ -287,6 +287,19 @@
 		        }
 		   ]
 		}
+		{
+			"name" 			: "PDF Page",
+			"file_name"		: "PDFPage.page",
+			"description" 	: "Visualforce PDF Page Template",
+			"author" 		: "trevorrussell",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Visualforce Page API Name",
+		            "default" 		: "MyVisualforcePageName"
+		        }
+		   ]
+		}
 	],
 	"ApexTrigger" : [
 		{
