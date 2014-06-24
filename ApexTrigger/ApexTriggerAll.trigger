@@ -1,4 +1,5 @@
 trigger {{ api_name }} on {{object_name}} (after delete, after insert, after undelete, after update, before delete, before insert, before update) {
+	/*
 	{{object_name}}TriggerHandler handler = new {{object_name}}TriggerHandler(Trigger.isExecuting, Trigger.size);
 	
 	if(Trigger.isInsert && Trigger.isBefore){
@@ -28,4 +29,5 @@ trigger {{ api_name }} on {{object_name}} (after delete, after insert, after und
 	else if(Trigger.isUnDelete){
 		handler.OnUndelete(Trigger.new);	
 	}
+	*/
 }
