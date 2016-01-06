@@ -25,12 +25,12 @@
 		//List<{{object_name}}> newRecords = [select Id, Name from {{object_name}} where Id IN :newRecordIDs];
 	}
 	
-	public void OnBeforeUpdate({{object_name}}[] oldRecords, {{object_name}}[] updatedRecords, Map<ID, {{object_name}}> recordMap){
+	public void OnBeforeUpdate({{object_name}}[] oldRecords, {{object_name}}[] updatedRecords, Map<ID, {{object_name}}> oldMap, Map<ID, {{object_name}}> newMap){
 		//Example Map usage
 		//Map<ID, Contact> contacts = new Map<ID, Contact>( [select Id, FirstName, LastName, Email from Contact where AccountId IN :recordMap.keySet()] );
 	}
 	
-	public void OnAfterUpdate({{object_name}}[] oldRecords, {{object_name}}[] updatedRecords, Map<ID, {{object_name}}> recordMap){
+	public void OnAfterUpdate({{object_name}}[] oldRecords, {{object_name}}[] updatedRecords, Map<ID, {{object_name}}> oldMap, Map<ID, {{object_name}}> newMap){
 		
 	}
 	

@@ -11,10 +11,10 @@ trigger {{ api_name }} on {{object_name}} (after delete, after insert, after und
 	}
 	
 	else if(Trigger.isUpdate && Trigger.isBefore){
-		handler.OnBeforeUpdate(Trigger.old, Trigger.new, Trigger.newMap);
+		handler.OnBeforeUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
 	}
 	else if(Trigger.isUpdate && Trigger.isAfter){
-		handler.OnAfterUpdate(Trigger.old, Trigger.new, Trigger.newMap);
+		handler.OnAfterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
 		{{object_name}}TriggerHandler.OnAfterUpdateAsync(Trigger.newMap.keySet());
 	}
 	
