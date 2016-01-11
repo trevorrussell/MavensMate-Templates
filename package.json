@@ -318,6 +318,29 @@
 		            "default" 		: "MyVisualforcePageName"
 		        }
 		   ]
+		},
+		{
+			"name" 			: "Auto-Run Page",
+			"file_name"		: "AutoRun.page",
+			"description" 	: "Visualforce Auto running Page Template",
+			"author" 		: "trevorrussell",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Visualforce Page API Name",
+		            "default" 	    : "MyVisualforcePageName"
+		        },
+		        {   
+		            "name"          : "object_name",
+		            "description"   : "Standard Controller Object Name",
+		            "default" 	    : "Account"
+		        },
+		        {   
+		            "name"          : "extension_name",
+		            "description"   : "Auto-Running Extension",
+		            "default" 	    : "MyAutoRunExtension"
+		        }
+		   ]
 		}
 	],
 	"ApexTrigger" : [
