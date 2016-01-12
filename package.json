@@ -225,6 +225,19 @@
 		   ]
 		},
 		{
+			"name" 			: "Unit Test TR",
+			"file_name"		: "UnitTestApexClassTR.cls",
+			"description" 	: "Unit test class",
+			"author" 		: "Trevor Russell",
+			"params" 		: [ 
+		        {   
+		            "name"          : "api_name",
+		            "description"   : "Apex Class API Name",
+		            "default" 		: "MyApexClass"
+		        }
+		   ]
+		},
+		{
 			"name" 			: "URL Rewriter",
 			"file_name"		: "UrlRewriterApexClass.cls",
 			"description" 	: "URL Rewriter class",
