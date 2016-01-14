@@ -7,7 +7,7 @@ trigger {{ api_name }} on {{object_name}} (after delete, after insert, after und
 	}
 	else if(Trigger.isInsert && Trigger.isAfter){
 		handler.OnAfterInsert(Trigger.new);
-		if(!System.isFuture()){{object_name}}TriggerHandler.OnAfterInsertAsync(Trigger.newMap.keySet());
+		if(!System.isFuture() && !System.isBatch()){{object_name}}TriggerHandler.OnAfterInsertAsync(Trigger.newMap.keySet());
 	}
 	
 	else if(Trigger.isUpdate && Trigger.isBefore){
@@ -15,7 +15,7 @@ trigger {{ api_name }} on {{object_name}} (after delete, after insert, after und
 	}
 	else if(Trigger.isUpdate && Trigger.isAfter){
 		handler.OnAfterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
-		if(!System.isFuture()){object_name}}TriggerHandler.OnAfterUpdateAsync(Trigger.newMap.keySet());
+		if(!System.isFuture() && !System.isBatch()){object_name}}TriggerHandler.OnAfterUpdateAsync(Trigger.newMap.keySet());
 	}
 	
 	else if(Trigger.isDelete && Trigger.isBefore){
@@ -23,7 +23,7 @@ trigger {{ api_name }} on {{object_name}} (after delete, after insert, after und
 	}
 	else if(Trigger.isDelete && Trigger.isAfter){
 		handler.OnAfterDelete(Trigger.old, Trigger.oldMap);
-		if(!System.isFuture()){{object_name}}TriggerHandler.OnAfterDeleteAsync(Trigger.oldMap.keySet());
+		if(!System.isFuture() && !System.isBatch()){{object_name}}TriggerHandler.OnAfterDeleteAsync(Trigger.oldMap.keySet());
 	}
 	
 	else if(Trigger.isUnDelete){
