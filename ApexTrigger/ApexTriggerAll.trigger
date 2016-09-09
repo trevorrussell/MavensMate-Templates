@@ -15,7 +15,7 @@ trigger {{ api_name }} on {{object_name}} (after delete, after insert, after und
 	}
 	else if(Trigger.isUpdate && Trigger.isAfter){
 		handler.OnAfterUpdate(Trigger.old, Trigger.new, Trigger.oldMap, Trigger.newMap);
-		if(!System.isFuture() && !System.isBatch()){object_name}}TriggerHandler.OnAfterUpdateAsync(Trigger.newMap.keySet());
+		if(!System.isFuture() && !System.isBatch()){{object_name}}TriggerHandler.OnAfterUpdateAsync(Trigger.newMap.keySet());
 	}
 	
 	else if(Trigger.isDelete && Trigger.isBefore){
